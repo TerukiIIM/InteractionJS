@@ -17,14 +17,16 @@ form.addEventListener("submit", function(event) {
     // Empêche l'actualisation après avoir submit
     event.preventDefault();
 
-    // Vérification si le code postal est constitué que de nombre
-    if (!adressCode.value.match(regExNum)) {
-        alert("Le code postal n'est pas correct (syntaxe :12345)");
-    };
+    if (!adressCode.value.match(regExNum) || (samePsw.value !== psw.value && psw.value !== samePsw.value)) {
+        // Vérification si le code postal est constitué que de nombre
+        if (!adressCode.value.match(regExNum)) {
+            alert("Le code postal n'est pas correct (syntaxe :12345)");
+        }
 
-    // Vérification si le mot de passe est le même que la confirmation
-    if (samePsw.value !== psw.value && psw.value !== samePsw.value) {
-        alert("Le mot de passe et la confirmation ne correspondent pas");
+        // Vérification si le mot de passe est le même que la confirmation
+        if (samePsw.value !== psw.value && psw.value !== samePsw.value) {
+            alert("Le mot de passe et la confirmation ne correspondent pas");
+        } 
     } else {
         // Faire disparaitre le form
         form.style.display = "none";
