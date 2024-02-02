@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	width: 100%
+}
+
+nav img {
+	position: absolute;
+    width: 150px;
+	top: 25px;
+	left: 25px;
+}
+
+nav a {
+    color: white;
+}
+
+.navBars {
+	align-items: center;
+	justify-content: center;
+	padding-top: 70px;
+	padding-right: 20px;
+}
+
+.navBars i {
+	margin: 0 20px;
+	color: white;
+	align-items: center;
+	justify-content: center;
+}
+
+.navBars .menu {
+    position: absolute;
+    top: 70px;
+    right: 50px;
+    width: 35px;
+}
+
+.navLinks {
+	top: 0;
+	left: 0 ;
+	position: absolute;
+	background-color: rgba(5,10,30,0.7);
+	backdrop-filter: blur(10px);
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: -100%;
+	transition: all 0.5s ease;
+}
+
+.navLinks ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.navLinks ul li {
+	margin: 25px 0;
+	font-size: 1.2em;
+}
+
+.navLinks ul li a:hover {
+	color: goldenrod;
+    transition: 0.5s;
+}
+
+.navLinks ul li.active a {
+    color: gold;
+    font-weight: 600;
+}
+
+.mobile-menu {
+	margin-left: 0;	
+}
+
+/* Header */
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(5,10,20,0.5), rgba(5,10,20,0.5)),url(Images/LightMode.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* darkmode */
+.darkMode {
+	color: white;
+	background-color: black;
+}
+
+.darkMode header {
+	background-image: linear-gradient(rgba(5,10,20,0.5), rgba(5,10,20,0.5)),url(Images/DarkMode.png);
+}
+
+.darkMode h3, .darkMode p, .darkMode ul li a {
+	color: white;
+}
+.darkMode .summary ul li a {
+	color: gold;
+}
+
+.darkMode .content .text:hover {
+	box-shadow:  0 10px 10px rgba(218, 165, 32, 0.3);
+}
+
+/* section */
+section {
+	padding: 0 10%;
+}
+
+section h2 {
+	padding-top: 100px;
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: 35px;
+	font-weight: 600;
+}
+
+/* summary */
+
+.summaryList {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.summary {
+	margin: 5%;
+	padding: 20px ; 
+}
+
+.summary ul li{
+	list-style: none;
+	padding: 10px 10px;
+	position: relative;
+	text-decoration: none;
+}
+
+.summary ul li a {
+	color: black;
+}
+
+.summary ul li a:hover {
+	color: goldenrod;
+}
+
+/* Sections */
+.content {
+	display: flex;
+	margin: 50px;
+    justify-content: space-between;
+}
+
+.poudlard {
+	height: 40%;
+	width: 40%;
+}
+
+.rowling, .warner, .hogwarts {
+	width: 35%;
+	height: 35%;
+}
+
+.bloomsbury {
+	width: 25%;
+	height: 25%;
+}
+
+.content .text {
+	color: black;
+    flex-basis: 50%;
+    background: goldenrod;
+    border-radius: 10px;
+    padding: 20px 15px; 
+}
+
+.content .text:hover {
+	box-shadow:  0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.join {
+	margin: 100px auto;
+	width: 80%;
+	background-image: url(https://i.pinimg.com/originals/42/15/16/4215160cd86906dd063387dd26937f21.gif);
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.join  h2 {
+	color: white;
+	margin-bottom: 40px;
+	padding: 0;
+}
+
+.heroBtn {
+	display: inline-block;
+	color: white;
+	border: 1px solid white;
+	padding: 15px 30px;
+	font-size: 15px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+
+.heroBtn:hover {
+	background: goldenrod;
+	border: 1px solid goldenrod;
+	transition: 0.5s;
+}
+
+@media screen and (max-width: 900px) {
+	.join  h2 {
+		font-size: 25px
+	}
+}
+
+/* Footer */
+footer {
+	background-color: black;
+	width: 100%;
+	padding: 70px 30px 20px;
+}
+
+.credit {
+	letter-spacing: 1px;
+	color: white;
+	text-align: center;
+}
+
+.socialIcons {
+	display: flex;
+	justify-content: center;
+}
+
+.socialIcons a {
+	padding: 10px;
+	background-color: white;
+	margin: 10px;
+	border-radius: 50%;
+}
+
+.socialIcons a i {
+	font-size: 2em;
+	color: black;
+	opacity: 0.9;
+}
+
+.socialIcons a:hover {
+	background-color: #111;
+	transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+	color: white;
+	transition: 0.5s;
+}
+
+@media screen and (max-width: 900px) {
+	body	 {
+		width: 100%;
+	}
+	
+	.credit h4 {
+		font-size: 8px;
+	}
+}
+
+/* Other */
+.btn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 100;
+	border: none;
+	outline: none;
+	background-color: gold;
+	color: white;
+	cursor: pointer;
+	padding: 20px;
+	border-radius: 10px;
+	font-size: 16px;
+	height: 60px
+}
+
+.btn:hover {
+	background-color: goldenrod;
+}
+
+button {
+	margin-left: 20px;
+	padding: 10px 25px;
+	background-color: gold;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}

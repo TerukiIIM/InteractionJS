@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <title>Join | Harry Potter</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="icon" type="image/x-icon" href="Images/LogoHP.png">
+        <link rel="stylesheet" type="text/css" href="form.css"/>
+    </head>
+
+    <body>
+        <nav>
+            <a href="index.html"><img src="Images/HarryPotter.png" alt="Logo"></a>
+        </nav>
+        
+        <h1 class="succes">Votre inscription a été transmise</h1>
+
+        <!-- " Required " permet de forcé le remplissage de l'input -->
+        <!-- " minlength="2" " permet de définir une valeur minimale de 2 caractères -->
+        <!-- " maxlength="5" " permet de définir une valeur max de 5 caractères -->
+
+        <form action="" class="form">
+            <h2>S'inscrire</h2>
+            <div class="name">
+                <div class="firstName">
+                    <label for="firstName">Prénom</label><br>
+                    <input type="text" id="firstName" name="firstName" placeholder="  Entrer le prénom" required minlength="2"><br>
+                </div>
+
+                <div class="lastName">
+                    <label for="lastName">Nom</label><br>
+                    <input type="text" id="lastName" name="lastName" placeholder="  Entrer le nom" required minlength="2"><br>
+                </div>
+            </div>
+
+            <div class="mail">
+                <label for="mail">Mail</label><br>
+                <input type="email" id="mail" name="mail" placeholder="  Entrer le mail" required><br>
+            </div>
+
+            <div class="location">
+                <label for="adress">Adresse</label><br>
+                <input type="text" id="adress" name="adress" placeholder="  Entrer l'adresse" required minlength="2"><br>
+                <label for="city">Ville</label><br>
+                <input type="text" id="city" name="city" placeholder="  Entrer la ville" required minlength="2"><br>
+                <label for="adressCode">Code Postal</label><br>
+                <input type="text" id="adressCode" name="adressCode" placeholder="  Entrer le code postal" required minlength="5" maxlength="5"><br>
+                <label for="country">Pays</label><br>
+                <input type="text" id="country" name="country" placeholder="  Entrer le pays" required minlength="2"><br>
+            </div>
+
+            <div class="password">
+                <label for="password">Mot de passe</label><br>
+                <input type="password" id="password" name="password" placeholder="  Entrer le mot de passe" required minlength="6"><br>
+                <label for="confirmPassword">Confirmation du mot de passe</label><br>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="  Confirmation du mot de passe" required minlength="6"><br>    
+            </div>
+            
+            <div class="check">
+                <input type="checkbox" id="check" name="check" required>Accepter nos condition d'utilisation<br>    
+            </div>
+
+            <div class="button">
+                <input type="submit" value="Retour">
+                <input type="submit" value="Envoyer">
+            </div>
+        </form>
+    </body>
+
+    <script src="forms.js"></script>
+</html>
